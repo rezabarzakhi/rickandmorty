@@ -151,6 +151,10 @@
   font-size: 1.3rem;
   margin-bottom: 0.2rem;
 }
+.character-detail__info .name span {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
 .character-detail__info .info {
   font-size: 0.9rem;
   margin-bottom: 1rem;
@@ -180,10 +184,25 @@
 /* character episodes */
 
 .character-episodes {
+  height: 60vh;
   /* border: 1px solid var(--slate-300); */
   background-color: var(--slate-800);
   border-radius: 1rem;
   padding: 1rem;
+  overflow-y: scroll;
+}
+.character-episodes::-webkit-scrollbar {
+  background-color: transparent;
+  max-height: 50px;
+  height: 50px;
+  color: var(--slate-400);
+  border-radius: 8px;
+  background-clip: padding-box;
+  width: 8px;
+}
+.character-episodes::-webkit-scrollbar-thumb {
+  background: var(--slate-400);
+  border-radius: 8px;
 }
 
 .character-episodes .title {
